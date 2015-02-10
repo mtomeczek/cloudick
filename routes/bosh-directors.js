@@ -5,7 +5,7 @@ var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
 mongoose.connect("mongodb://localhost/cloudrepo");
-var cloudRepoDb = require('cloud-repo-db')(mongoose);
+var cloudRepoDb = require('../js/cloud-repo-db')(mongoose);
 
 /*
  var boshDirector = new cloudRepoDb.BoshDirector({guid: 'asdf', description: 'description'});
